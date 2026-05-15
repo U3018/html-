@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+.mokuji{
+    padding: 10px;
+    margin: 10px 0;
+    font-weight: bold;
+    border: solid 2px #fffb00
+}
+ .mokuji p{
+        margin: 0;
+        padding: 1px 0;
+    }
+
+.dairy{
+    padding: 10px 10px;
+    margin: 10px 10px;
+    font-weight: normal;
+    border: solid 2px;
+    border-color: transparent #4946db  #4946db #4946db;
+}
+    .dairy a{
+        margin: 0;
+        padding: 0 5px;
+    }
+
+.box1{
+        padding: 10px 10px;
+        margin: 2em 0;
+        font-weight: bold;
+        border: solid 3px #000000;
+ }
+    .box1 p {
+        margin: 0;
+        padding: 0;
+}
+
+#N1{
+    color: #ff0000;
+}
+
+.box2{
+    padding: 1.0em 2em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 4px #3bfa06;
+
+}
+
+.box3{
+    padding: 16px 32px;
+    margin: 2px 0;
+    font-weight: bold;
+    border: solid 4px #0000ff;
+}
+ .box3 p{
+        margin: 0;
+        padding: 2px 0;
+}
+
+.box4{
+    padding: 8px 16px;
+    margin: 2px 2px;
+    font-weight: normal;
+    border: double 2px #97daf7;
+}
+
+.boxJava{
+    padding: 8px 16px;
+    margin: 2px 2px;
+    font-weight: normal;
+    border: solid 2px #000000;
+}
+
+.boxJava目次{
+    padding: 2px 4px;
+    margin: 2px 4px;
+    font-weight: normal;
+    border: solid 2px #2b8fd1;
+}
+.boxJava目次 p{
+    margin: 0;
+    padding: 1px 0;
+}

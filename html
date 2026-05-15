@@ -1,0 +1,228 @@
+
+<!DOCTYPE HTML>
+<html lang="ja">
+
+</html>
+ <head>
+    <meta charset="UTF-8">
+    <meta meta="viewport" content="width=device-width,initial-scale=1.0">
+    <title>html いろいろ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+ </head>
+
+<body>
+    <div class="mokuji">
+        <h1>目次</h1>
+        <p><a href="#htmlの書き方">htmlの書き方</a></p>
+        <p><a href="#htmlのコード">htmlのコードについて</a></p>
+        <p><a href="#bodyのコード">bodyで使うコード</a></p>
+        <p><a href="#bodyの装飾">bodyの装飾方法（CSS）</a></p>
+        <p><a href="#Javaの使い方">Javaの使い方</a></p>
+        <p><a href="#sankou">参考元</a></p>
+    </div>
+    <div class="dairy">
+        <h1>watnow復習</h1>
+        <a href="#5/13">5/13</a>
+        <a href="#5/15">5/15</a>
+        
+
+    </div>
+
+
+    <h1 id="htmlの書き方">htmlを書くに至るまで</h1>
+    <p>まずはVScodeを立ち上げる
+        次にそのウェブのファイルを作りその中にhtmlを書くドキュメントを作る
+    </p>
+
+    <h2>CSSの始め方</h2>
+    <div>
+        <p>まずはdirの中にCSSのファイルを作りその中にCSSのドキュメントを作る</p>
+        <p>次に"head"に"link="stylesheet" href="css.style.css""と書く</p>
+        <p></p>
+    </div>
+
+    <h2 id="htmlのコード">htmlのコード</h2>
+    <p>head:そのほか、タブなど </p>
+    <p>body:文書を書く場所</p>
+
+    <h3>headのコードの意味</h3>
+    <p>"!DOCTYPE HTML"はこのファイルはHTML5で書かれていることの宣言    </p>
+    <p>"html lang=ja"は日本語でHTMLを書いてることを伝える</p>
+    <P>"meta=viewport"とはウェブページを表示する表示領域のこと</P>
+    <p>"title"はタブに表示する名称</p>
+
+    <h3 id="bodyのコード">bodyで使うコード</h3>
+    <p>"h1"は大見出し、"h2"は中見出し、"h3"は小見出し</p>
+    <p>"p"は段落</p>
+    <div>"div"はコンテンツをグループ化する</div>
+    <div align="center">"div align="center""は中央寄りの文書を書ける</div>
+    <span><p>"span"は"p""div"の中に入れて使うことが多い</p>
+    <p>特定の部分だけを装飾するのに使うかも</p></span>
+    <div><p>改行を含むあるまとまりの文書を書こうとすると</p>
+    <p>"div"の中で"p"を使ったりするといいのかも？</p>
+    <p>"<",">"をテキストとして表示したいときは"& l t ;","& g t ;"（実際コードを打つ際は文字の間にスペースはなし）で表す</p>
+    <div class="box1">
+    <p>"a"は"aタグ"といい指定した場所をハイパーリンク（そこにワープできるやつ）にできる</p>
+    <p>aタグにはほかのwebサイトにワープするのと同一ページ内の指定した箇所にワープさせるものがある</p>
+    <p>そのほかにもメールソフトを起動させたり、電話発信のものがある</p>
+    <h3>ほかのWebページへのワープ</h3>
+    <p><a href="https://www.ritsumei.ac.jp/rsp/">立命館大学のstudentportal</a></p>
+    <h3>同一ページ内の指定した箇所へのワープ</h3>
+    <p><a href="#bodyの装飾">bodyの装飾に移動</a></p>
+    <p>a"aタグ"の書き方はaの後に「"helf="○○""（ハイパーリンクにしたい文字）」と書く</p>
+    <p>"aタグ"の後に "target=blank"と書くことで別のタブで開くことができる</p>
+    </div>
+    <div>
+        <h3>htmlを使用した画像の挿入方法</h3>
+        <p>htmlで画像を挿入する際"img src="○○""で読み込む画像を</p>
+        <p>"alt"は画像の読み込みが遅い際に表示する画像の説明を表す</p>
+        <h4>htmlを使用して画像を挿入する方法は３つある</h4>
+        <p>しかしどれも&lt;img src="○○" alt="□□" /&gt;　で表し、srcの中身の身を変えていく</p>
+        <p>１つ目はURLを用いて</p>
+        <p>&lt;img src="URL" alt="説明文" /&gt;という風に書けるがサーバーうんぬんの話があるのでやめといたほうがいい</p>
+        <p>２つ目は画像をhtmlページと同じディレクトリーにファイルで保存している場合</p>
+        <p>&lt;img src="○○.jpg(など)" alt="説明文"&gt;　で表す</p>
+        <p>３つ目は画像がhtmlページと同じディレクトリーの"images"のサブディレクトリーにある場合</p>
+        <p>&lt;img src="images/○○.jpg(など)" alt="説明文&gt;　で表す</p>
+    </div>
+    </div>
+
+    <h2 id="bodyの装飾">bodyの装飾</h2>
+    <div class="box1">
+    <p>"div"の中の文書を装飾しようとするとCSSを用いる</p>
+    <p>CSSによる装飾方法には"id"と"class"の二つがある</p>
+    <p id="N1">"id"ではwebを通してその一回しか装飾しないときに使う</p>
+    <p>また"id"は１ページで１回しか使えない</p>
+    </div>
+
+    <div class="box3">
+    <h2>CSSでのコード</h2>
+    <h3>枠のコードについて</h3>
+    <div>
+    <p class="box1">"class"はwebを通してその装飾を複数回使う際に使う</p>
+    <p>".box1 p"とは".box1"の中にある全てのｐ（段落）に対しての装飾である</p>
+    <p>この時"p"でなく"a"を使うと全ての a(aタグ)に対してになる</p>
+    <p>".box1"内においてはその中にある文字や空白、枠線に対する装飾ができる</p>
+    </div>
+    <h3>boxの装飾について</h3>
+    <p>"padding"は文字を書く部分と枠線との空白のサイズを表す</p>
+    <p>"margin"は枠線とその外側との空白のサイズを表す</p>
+    <p>"font-weight"はテキストの太さをしてできる</p>
+    <p>"font-weight"はそのサイズを示す言葉が決まっている</p>
+    <p>大体使うのは"normal"か"bold"</p>
+    <p>"border"は枠線について表す</p>
+    </div>
+
+    <h2>CSS装飾の各要素の書き方</h2>
+    <h3>padding,marginの書き方</h3>
+    <p>padding,marginはその左にある要素の数に応じて何を表すかが変わる</p>
+    <p>１つなら全辺、２つなら上下・左右</p>
+    <p>３つなら上・左右・下、４つなら上・右・下・左</p>
+    <div class="box4">
+    <h3>borderの書き方</h3>
+    <p>"borderは　線の種類、線の太さ、線の色　で表す</p>
+    <p>線の種類は実線(solid)や点線(dotted)、二重線(double)などが表現できる</p>
+    </div>
+
+ <div class="boxJava">
+        <h1 id="Javaの使い方">Javaの使い方</h1>
+        <div class="boxJava目次"> <h2> ボタンを使ったJava   </h2>
+            <p>ボタン型リンクの設置</p>
+            <p>クリックしたら新しいタブ・ウィンドウが開く</p>
+            <p>進む・戻るボタン</p>
+            <p>ウィンドウを閉じる</p>
+            <p>ポップアップの表示</p>
+            <p>ページの更新</p>
+        </div>
+        <h3>ボタン型リンクの設置</h3>
+        <p>ボタンの設置は　htmlでは　"&lt;form&gt;&lt;input type="button" value="こちらをクリック" onclick="new__page()"&gt;&lt;/form&gt;"　と書き</p>
+        <p><form><input type="button" value="googleを開く" onclick="new_page()"></form></p>
+        <p>Javaでは</p>
+        <p>function new_page() { </p>
+            <p> window.open("https://www.google.com/?hl=ja","",""); </p>
+            <p>}</p>
+            <p>と書くことでボタンを押すことにより任意のウィンドウを開かせることができる</p>
+        <p>この時　window.open("任意のurl","ウインドウ名","プロパティ");　を表す（プロパティ＝特徴）</p>
+        <p>この時プロパティには「"width=400,height=400,scrollbars=yes"」と書くことで以下のように特徴を加えることができる</p>
+        <p><form><input type="button" value="googleを開く" onclick="new_page2()"></form></p>
+        <h3>新しいタブ・ウィンドウ</h3>
+        <p>これらをどうするかは先のプロパティにて決めることができる</p>
+        <p>新しいタブで開きたいときにはプロパティを設定しない</p>
+        <p>新しいウィンドウで開きたいときはプロパティを設定すればよい</p>
+    </div>
+
+    <div class="box2">
+    <h1 id="5/13">5/13　知ったこと</h1>
+    <h2>commitまで</h2>
+    <div>
+        <p>変更はまず"git add index"でIndexに保存する</p>
+        <p>Indexでの保存はまとめて"git commit -m "○○""でcommitで管理する</p>
+        <p>commitはそれまでの変更をIndexよりも要点をまとめることができる</p>
+        <p>クラウドに保存しておくことで他社とデータの受け渡しが可能となる</p>
+        <p>"git push origin ○○"でデータのアップロード、"git pull ○○"でデータのダウンロード</p>
+    </div>
+    <div>
+        <h2>gitコマンド</h2>
+        <p>"git add ." でindexに保存する</p>
+        <p>"git commit -m(commit名)" でindexをcommitに保存</p>
+        <p>"git push origin アップロード先" でクラウドにcommitをアップロード</p>
+        <p>"git checkout -b（ブランチ名）" でブランチ間を移動する</p>
+        <p>"git pull" はローカルリポジトリ（自分のパソコンの記録）にクラウド上のデータを持ってきて"mater"に取り込む</p>
+        <p>"git fetch -p()" もローカルにクラウドから持ってくることだが</p>
+        <p>fetchは取り込む場所が"origin/maste"となる</p>
+        <img src="image/IMG_3394.jpeg" alt="git説明1" width="400px" height="340px">
+        <img src="image/IMG_3395.jpeg" alt="git説明2" width="400px" height="340px">
+
+    </div>
+
+    <h2>ライブラリ、npmについて</h2>
+    <p>プログラミングをするうえでコードを打つのが大変なものがある</p>
+    <p>それらのプログラミングはnpmなどからライブラリという要素よりも引用することができる</p>
+    <p>npmが図書館でライブラリはその中にある本のようなものである</p>
+
+    <h2>ホームページの作り方⓵</h2>
+    <p>ホームページを作る中で内容ごとの移動は１枚のページに作ることで移動が早く済む</p>
+    <p>JavaScriptはホームページの要素に対してアクションを加えることができる</p>
+    <p>htmlの要素をすべてJavaで管理することによって楽になる</p>
+
+    <h2>今後の課題</h2>
+    <p>JavaScriptを使えるようにする</p>
+    <p>githubへの理解を深める</p>
+    </div>
+
+    <div class="box5/15">
+        <h1 id="5/15">5/15 知ったこと</h1>
+        <h2>git 復習</h2>
+        <p>branch間の移動はcheckoutよりもswitchを使ったほうがいい</p>
+        <p>originはクラウドのことで、masterはbranchの基本(main)の部分</p>
+        <p>pullはリモートからローカルにmaster取り込み</p>
+        <p>fetchはローカルにあるorigin/masterでoriginのmasterがどうなっているのかの追跡</p>
+        <h2>git 新知識</h2>
+        <p>"git reset"はミスって"add ."や"commit"をしてもそれらの操作をなかったことにできるコマンド</p>
+        <p>"git reset --hard"は"add .","commit","ワーキングツリー（現在やっているプログラミング）"の全てを削除する</p>
+        <p>"〃 --mixed"は"add ."と"commit"のみを削除する</p>
+        <p>"〃 --soft"は"commit"のみを削除する</p>
+        <p>"git push --force"は他人の作業を強制的に自身のローカルで上書きする</p>
+    </div>
+
+
+    <h1 class="box1" id="sankou">このwebを作るまでに</h1>
+    <div><p>boxについて</p>
+        <a href="https://saruwakakun.com/html-css/reference/box" target="blank">https://saruwakakun.com/html-css/reference/box</a>
+    </div>
+     <div><p>borderについて</p>
+        <a href="https://zero-plus.io/media/css-border/" target="blank">https://zero-plus.io/media/css-border/</a>
+    </div>
+     <div><p>aタグについて</p>
+        <a href="https://emma.tools/magazine/what-atag-is/" target="blank">https://emma.tools/magazine/what-atag-is/</a>
+    <div><p>JavaScriptについて</p>
+    <a href="https://kredo.jp/media/javascript-sample/" target="blank">https://kredo.jp/media/javascript-sample/</a></div>
+    </div>
+   <p>をもっともよく使った</p>
+
+    
+
+</body>
+
+</html>
