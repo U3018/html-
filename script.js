@@ -4,4 +4,3 @@ function new_page() {
 function new_page2() { 
     window.open("https://www.google.com/?hl=ja","google_window","width=400,height=400,scrollbars=yes");
 }
-
