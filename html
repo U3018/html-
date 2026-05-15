@@ -130,18 +130,18 @@
         <div class="boxJava目次"> <h2> ボタンを使ったJava   </h2>
             <p>ボタン型リンクの設置</p>
             <p>クリックしたら新しいタブ・ウィンドウが開く</p>
-            <p>進む・戻るボタン</p>
-            <p>ウィンドウを閉じる</p>
             <p>ポップアップの表示</p>
             <p>ページの更新</p>
         </div>
         <h3>ボタン型リンクの設置</h3>
         <p>ボタンの設置は　htmlでは　"&lt;form&gt;&lt;input type="button" value="こちらをクリック" onclick="new__page()"&gt;&lt;/form&gt;"　と書き</p>
+        <p>"&lt;form&gt;&lt;input type="型" value="表示する文字" onclick="JavaScriptで各様の関数"&gt;&lt;/form&gt;" を表している</p>
+        <p>"type"には"button"や"checkbox","date"などがある</p>
         <p><form><input type="button" value="googleを開く" onclick="new_page()"></form></p>
+        <p></p>
         <p>Javaでは</p>
         <p>function new_page() { </p>
-            <p> window.open("https://www.google.com/?hl=ja","",""); </p>
-            <p>}</p>
+            <p> window.open("https://www.google.com/?hl=ja","",""); }</p>
             <p>と書くことでボタンを押すことにより任意のウィンドウを開かせることができる</p>
         <p>この時　window.open("任意のurl","ウインドウ名","プロパティ");　を表す（プロパティ＝特徴）</p>
         <p>この時プロパティには「"width=400,height=400,scrollbars=yes"」と書くことで以下のように特徴を加えることができる</p>
@@ -150,6 +150,15 @@
         <p>これらをどうするかは先のプロパティにて決めることができる</p>
         <p>新しいタブで開きたいときにはプロパティを設定しない</p>
         <p>新しいウィンドウで開きたいときはプロパティを設定すればよい</p>
+        <h3>ポップアップの表示</h3>
+        <p>JSでは"function pop_window(){alert("表示する文書");};"で表せる</p>
+        <h3>ページの更新</h3>
+        <p>JSでは"gunction reload_windou(){window.location.reload();};" で表せる</p>
+        <h2>JSで表す時間</h2>
+        <h3>年月日</h3>
+        <p>&lt;script language="JavaScript"&gt;today=new Date();year=today.getFullYear();month=today.getMonth()+1;day=today.getDate();document.write("今日は"+year,"年",month,"月",day,"日"+"です。");&lt;/script&lt;　で</p>
+        <p><script language="JavaScript">today=new Date();year=today.getFullYear();month=today.getMonth()+1;day=today.getDate();document.write("今日は"+year,"年",month,"月",day,"日"+"です。");</script></p>
+        <p>と表せる</p>
     </div>
 
     <div class="box2">
@@ -204,6 +213,7 @@
         <p>"〃 --mixed"は"add ."と"commit"のみを削除する</p>
         <p>"〃 --soft"は"commit"のみを削除する</p>
         <p>"git push --force"は他人の作業を強制的に自身のローカルで上書きする</p>
+        <p>"google AI studio"でAIを使うとgeminiと違い入力したデータはAIの学習に使われ、データの記録が残らないようになっている</p>
     </div>
 
 
