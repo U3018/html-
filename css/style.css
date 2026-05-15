@@ -87,9 +87,12 @@
     bottom: 50px;   /*画面の下端に配置*/
     right: 20px;   /*画面の左端に配置*/
     width: 8%;   /*画面の10％を占める*/
-    height: 10%;   /*画面の10％を占める*/
+    height: 9%;   /*画面の10％を占める*/
     background-color: #ffffff; /*背景色を設定*/
     z-index: 9999;   /*ほかの要素より手前に配置*/
+    padding: 0;
+    margin: 1px;
+    border: solid 2px #000000;
 }
 .fixed-upper p {
     color: blue;
